@@ -54,7 +54,7 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
     int space;
     int total_len;
    
-    dest_len = ft_strlen(dest);
+    dest_len = ft_strlen(dst);
     //Calculo el espacio libre
     space = size - dest_len - 1;
     if (space <= 0)
