@@ -34,6 +34,8 @@ Haber copiado espacio_libre - 1 caracteres.
 Pon \0 al final.
 */
 
+#include <stddef.h>
+
 int ft_strlen(char *str)
 {
     int i;
