@@ -1,21 +1,20 @@
-/*
-La función strcpy() copia string2, incluido el carácter nulo final, en la ubicación especificada por string1.
-La función strcpy() opera en series con final nulo.
-Los argumentos de serie para la función deben contener un carácter nulo (\0) que marque el final de la serie.
-No se realiza ninguna comprobación de longitud. No debe utilizar una serie literal para un valor string1 ,
-aunque string2 puede ser una serie literal.
-*/
+#include <stddef.h>
 
-char *ft_strcpy(char *dest, const char *src)
+void *ft_memset(void *s, int c, size_t n)
 {
-    int i;
-   
-    i = 0;
-    while(src[i])
+    unsigned char *p;
+
+    p = (unsigned char *)s;
+    while(n > 0)
     {
-        dest[i] = src[i];
-        i++;
+        *p = (unsigned char *)c;
+        p++;
+        n--;
     }
-    dest[i] = '\0';
-    return (dest);
+    return (s); 
 }
+
+/*
+Devuelve s porque es void * que es un puntero a algo 
+que no tiene tipo concreto. Devuelve el puntero genérico del principio.
+*/
