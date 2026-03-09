@@ -61,7 +61,7 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
         return size;
     total_len = dest_len + ft_strlen(src);
     i = 0;
-    while(dest[i])
+    while(dst[i])
         i++;
     j = 0;
     while (src[j] && j < space)
