@@ -16,5 +16,5 @@ void *ft_memset(void *s, int c, size_t n)
 
 /*
 Devuelve s porque es void * que es un puntero a algo 
-que no tiene tipo concreto. Devuelve el puntero genérico del principio.
+que no tiene tipo concreto. Devuelve el puntero genérico del principio
 */
